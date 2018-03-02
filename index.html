@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>Calculator</title>
+<p></p>
+
+<head>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body style="background-color:rgb(41, 41, 41)">
+
+
+    <style>
+        .container {
+            max-width: 305px;
+            min-width: 305px;
+        }
+
+        .mybutton {
+            width: 46px;
+        }
+
+        .padding {
+            padding: 10px 15px
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <form>
+                    <div class="form-group">
+                            <label for="form-control">(Calculator)</label>
+                        <input id="anzeige" class="form-control" placeholder="0">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm padding">
+
+                <button onclick="clr('C')" type="button" class="btn btn-danger btn btn-primary btn-lg btn btn btn-secondary btn-lg btn-block">CE</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col padding">
+                <button onclick="numbers(7)" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">7</button>
+            </div>
+            <div class="col padding">
+                <button onclick="numbers(8)" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">8</button>
+            </div>
+            <div class="col padding">
+                <button onclick="numbers(9)" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">9</button>
+            </div>
+            <div class="col padding">
+                <button onclick="operators ('/')" type="button" class="mybutton btn btn-info btn btn-primary btn-lg">÷</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col padding">
+                <button onclick="numbers(4)" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">4</button>
+            </div>
+            <div class="col padding">
+                <button onclick="numbers(5)" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">5</button>
+            </div>
+            <div class="col padding">
+                <button onclick="numbers(6)" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">6</button>
+            </div>
+            <div class="col padding">
+                <button onclick="operators('*')" type="button" class="mybutton btn btn-info btn btn-primary btn-lg">×</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col padding">
+                <button onclick="numbers(1)" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">1</button>
+            </div>
+            <div class="col padding">
+                <button onclick="numbers(2)" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">2</button>
+            </div>
+            <div class="col padding">
+                <button onclick="numbers(3)" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">3</button>
+            </div>
+            <div class="col padding">
+                <button onclick="operators('-')" type="button" class="mybutton btn btn-info btn btn-primary btn-lg">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col padding">
+                <button onclick="operators('.')" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">, </button>
+            </div>
+            <div class="col padding">
+                <button onclick="numbers(0)" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">0</button>
+            </div>
+            <div class="col padding">
+                <button onclick="getResult('=')" type="button" class="mybutton btn btn-outline-success btn btn-primary btn-lg">=</button>
+            </div>
+            <div class="col padding">
+                <button onclick="operators('+')" type="button" class="mybutton btn btn-info btn btn-primary btn-lg">+</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
